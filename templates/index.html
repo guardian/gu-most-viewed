@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Simple python app example{% endblock %}
+
+{% block content %}
+<div class="fluid-wrap">
+	<div class="fluid-row">
+		<div class="col-12">
+			<h1 class="article-heading">Most Popular on the Guardian</h1>
+
+			<blockquote>Surfacing what other people think, so you can think it to.</blockquote>
+		</div>
+	</div>
+
+	<div class="fluid-row margin-top">
+		<div class="col-6">
+			<h2 class="sub-heading">Endpoints</h2>
+			<ul>
+				<li><a href="/api/most-viewed">Most viewed (whole site)</a></li>
+				<li><a href="/api/most-viewed/football">Most popular in football</a></li>
+			</ul>
+		</div>
+		<div class="col-6">
+			<h2 class="sub-heading">Most viewed data</h2>
+
+			<p>This is the most viewed content over the last 24 hours according to Ophan.</p>
+
+			<p>This data feed is meant to replace the old Ophan Most Viewed data.</p>
+
+		</div>
+	</div>
+</div>
+
+{% endblock %}
